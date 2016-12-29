@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <input placeholder="输入待办事宜" bindinput="inputHandler" />
+  {{currItem}}
+  <block wx:for="{{items}}" wx:for-item="item">
+    <text class="item">{{item.name}}</text>
+  </block>
+</view>
